@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(120deg, #1e293b, #0f172a);
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-image: url("https://images.unsplash.com/photo-1606813909335-e3edcd4d7a4d");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(6px);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #d1d5db;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 0 10px #38bdf8aa;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #0ea5e9;
+}
+
+.features, .gallery, .commands {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h3,
+.gallery h3,
+.commands h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.gallery .images {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 200px;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #000;
+}
+
+.commands ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.commands li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+}
+.commands-page {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.commands-page h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.command-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  margin: 1.5rem 0;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  box-shadow: 0 0 15px #00000030;
+  transition: transform 0.3s ease;
+}
+
+.command-card:hover {
+  transform: translateY(-5px);
+}
+
+.command-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 10px #00000099;
+}
+
+.command-card h4 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+}
+
+.command-card p {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-top: 0.4rem;
+  text-align: left;
+}
+.about {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #e5e7eb;
+  line-height: 1.8;
+}
+.developer {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.developer-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.developer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.developer p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button.alt {
+  background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  transition: all 0.3s;
+}
+
+.cta-button.alt:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.cta-button.alt {
+  background-color: #ffffff20;
+  border: 1px solid #ffffff50;
+  color: #fff;
+}
+.roadmap {
+  padding: 4rem 2rem;
+  background: #0d0f1a;
+  color: #fff;
+  text-align: center;
+}
+
+.roadmap h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.roadmap p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #cfcfcf;
+}
+
+.roadmap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.roadmap-item {
+  background: #1a1d2e;
+  border-left: 4px solid #6d7dfc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.roadmap-item h4 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6d7dfc;
+  border-radius: 10px;
+}
